@@ -26,7 +26,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 CM_ROOT="$MY_DIR"/../../..
 
-HELPER="$CM_ROOT"/vendor/cm/build/tools/extract_utils.sh
+HELPER="$CM_ROOT"/vendor/hexa/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -37,7 +37,11 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" "true" "$1"
 
 # Copyright headers and guards
+<<<<<<< HEAD
 write_headers "gemini lithium natrium"
+=======
+write_headers "gemini natrium"
+>>>>>>> 59c9a0ea4247a70f50d8a0a822a028889cc91ff7
 
 # The standard common blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt
