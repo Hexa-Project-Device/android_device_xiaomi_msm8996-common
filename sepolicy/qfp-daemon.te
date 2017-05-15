@@ -1,10 +1,7 @@
 allow qfp-daemon self:socket create_socket_perms;
 
-<<<<<<< HEAD
-=======
 allow qfp-daemon captouch_device:chr_file rw_file_perms;
 
->>>>>>> 74dff5366a764103c3e139908203037d95efe62f
 allow qfp-daemon persist_file:dir search;
 
 r_dir_file(qfp-daemon, persist_qc_senseid_file)
