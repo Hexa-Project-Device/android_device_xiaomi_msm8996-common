@@ -37,7 +37,11 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" "true" "$1"
 
 # Copyright headers and guards
+<<<<<<< HEAD
 write_headers "gemini natrium"
+=======
+write_headers "gemini lithium natrium"
+>>>>>>> 74dff5366a764103c3e139908203037d95efe62f
 
 # The standard common blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt
